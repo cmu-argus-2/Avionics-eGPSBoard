@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MAX2769BETI_V_T")(type "KiCad")(uri "${KIPRJMOD}/../../../libraries/symbols/MAX2769BETI_V_T.kicad_sym")(options "")(descr "Maxim MAX2769BETI/V+T GPS/GNSS RF front-end"))
+  (lib (name "MAX8510EXK29T")(type "KiCad")(uri "${KIPRJMOD}/../../../libraries/symbols/MAX8510EXK29T.kicad_sym")(options "")(descr "Maxim MAX8510 120mA LDO voltage regulator"))
+)

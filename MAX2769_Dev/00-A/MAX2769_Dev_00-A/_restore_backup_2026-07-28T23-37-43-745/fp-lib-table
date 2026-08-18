@@ -1,0 +1,6 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "sdr-gps-footprints") (type "KiCad") (uri "${KIPRJMOD}/../../../libraries/footprints.pretty") (options "") (descr "Shared footprint library for all sdr-gps-hardware boards"))
+	(lib (name "D32G-016_368M") (type "KiCad") (uri "/home/omanavekar/Desktop/Projects/sdr-gps-hardware/libraries/footprints.pretty/D32G-016_368M.pretty") (options "") (descr ""))
+	(lib (name "footprints") (type "KiCad") (uri "/home/omanavekar/Desktop/Projects/sdr-gps-hardware/libraries/footprints.pretty") (options "") (descr ""))
+)
