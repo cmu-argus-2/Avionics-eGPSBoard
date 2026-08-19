@@ -2399,9 +2399,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "Connecting mounting pins to GND here"
+	(text_box "TODO: Figure out how to handle CLK and PPS"
 		(exclude_from_sim no)
-		(at 245.11 126.365 0)
+		(at 134.62 147.32 0)
 		(size 22.86 8.89)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2787,16 +2787,6 @@
 			(type default)
 		)
 		(uuid "05261eb6-a785-49f1-9477-9d1e0c5cc780")
-	)
-	(wire
-		(pts
-			(xy 90.17 95.25) (xy 105.41 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05a394b1-1391-4f12-9be1-b8f3755b4fd8")
 	)
 	(wire
 		(pts
@@ -3230,16 +3220,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 95.25) (xy 172.72 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "430d1719-3b9c-4b8d-9a91-9ed5da7db396")
-	)
-	(wire
-		(pts
 			(xy 86.36 92.71) (xy 105.41 92.71)
 		)
 		(stroke
@@ -3520,16 +3500,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 100.33) (xy 105.41 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7302dd43-af46-435c-b6db-dac5469b4bc8")
-	)
-	(wire
-		(pts
 			(xy 86.36 80.01) (xy 105.41 80.01)
 		)
 		(stroke
@@ -3627,16 +3597,6 @@
 			(type default)
 		)
 		(uuid "8386eb88-5c68-4395-9a8a-db742687a519")
-	)
-	(wire
-		(pts
-			(xy 90.17 97.79) (xy 105.41 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8494adc0-4882-4812-838f-2b2e511e4c85")
 	)
 	(wire
 		(pts
@@ -3767,16 +3727,6 @@
 			(type default)
 		)
 		(uuid "96b215ba-ae7d-4222-8d8a-17438c06c22d")
-	)
-	(wire
-		(pts
-			(xy 157.48 97.79) (xy 172.72 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98007c8a-ba34-4da9-83c8-ee423f8d9cdd")
 	)
 	(wire
 		(pts
@@ -4280,16 +4230,6 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 100.33) (xy 172.72 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0feb44d-4aeb-4ca5-a67d-83e22effbed5")
-	)
-	(wire
-		(pts
 			(xy 86.36 69.85) (xy 105.41 69.85)
 		)
 		(stroke
@@ -4358,16 +4298,6 @@
 		)
 		(uuid "ff3c4cad-8f4f-44f9-b0b8-5b7c32ecaec1")
 	)
-	(label "SPI0_MISO"
-		(at 90.17 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "02ba796f-7b66-4cbe-b5bb-c23f3a9f9102")
-	)
 	(label "Pin_49"
 		(at 172.72 120.65 180)
 		(effects
@@ -4428,6 +4358,16 @@
 		)
 		(uuid "2b90adcd-6ad2-4340-ab4c-56758d3fa353")
 	)
+	(label "Pin_31"
+		(at 172.72 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2bb8ad54-2ac0-41cd-998c-819edc6de36d")
+	)
 	(label "Pin_54"
 		(at 185.42 125.73 0)
 		(effects
@@ -4437,6 +4377,16 @@
 			(justify left bottom)
 		)
 		(uuid "2fe870b4-596c-4f60-814a-594dd61a5fb1")
+	)
+	(label "Pin_31"
+		(at 105.41 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "37e8b6de-1280-4777-9ba8-cfee47fab5bc")
 	)
 	(label "Pin_42"
 		(at 118.11 110.49 0)
@@ -4498,16 +4448,6 @@
 		)
 		(uuid "47eeef10-2b47-4f0a-b32c-af462c32434c")
 	)
-	(label "SPI0_MOSI"
-		(at 157.48 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4b519ee7-dbdb-4cb5-a24b-3db8a70026d4")
-	)
 	(label "Pin_54"
 		(at 118.11 125.73 0)
 		(effects
@@ -4537,16 +4477,6 @@
 			(justify left bottom)
 		)
 		(uuid "5338c65e-7ab2-46a5-80d0-531ba08dea19")
-	)
-	(label "SPI0_CLK"
-		(at 90.17 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "578eab16-80ef-4acf-a5d8-cf50a74a8c0f")
 	)
 	(label "Pin_58"
 		(at 118.11 130.81 0)
@@ -4598,16 +4528,6 @@
 		)
 		(uuid "7081f568-99cb-4fb7-858e-8a14a3599e19")
 	)
-	(label "SPI0_MISO"
-		(at 157.48 100.33 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "7329471f-0a73-4d37-b6ab-3f38aa79e5c3")
-	)
 	(label "CLKOUT"
 		(at 90.17 113.03 0)
 		(effects
@@ -4637,6 +4557,16 @@
 			(justify right bottom)
 		)
 		(uuid "789675ba-f2bb-4e51-9c99-47b8a08394dc")
+	)
+	(label "Pin_33"
+		(at 105.41 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7efaddcd-651f-45b2-8d98-265a4830df3b")
 	)
 	(label "Pin_56"
 		(at 118.11 128.27 0)
@@ -4698,15 +4628,15 @@
 		)
 		(uuid "bb1c276d-baed-4f39-bcbd-2baee71136d3")
 	)
-	(label "SPI0_CLK"
-		(at 157.48 95.25 0)
+	(label "Pin_33"
+		(at 172.72 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
-		(uuid "c491e7f6-4f7e-4440-9f03-de1117746ebd")
+		(uuid "bfdfd65c-0b49-45c7-834d-a2cec7a8c431")
 	)
 	(label "Pin_53"
 		(at 172.72 125.73 180)
@@ -4718,16 +4648,6 @@
 		)
 		(uuid "d261a2cd-ea1a-43d4-b37b-7f5ce5f471d4")
 	)
-	(label "SPI0_MOSI"
-		(at 90.17 97.79 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d4742cf9-1396-4e14-8611-d9d1c5cb2867")
-	)
 	(label "Pin_48"
 		(at 118.11 118.11 0)
 		(effects
@@ -4737,6 +4657,26 @@
 			(justify left bottom)
 		)
 		(uuid "d8535df1-ba6c-45c4-9a31-9a7badd71b69")
+	)
+	(label "Pin_29"
+		(at 172.72 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e49e17a6-108a-458a-8911-3e228aca112b")
+	)
+	(label "Pin_29"
+		(at 105.41 95.25 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e9d59170-cc9e-4271-b2fb-05d720cd1e9b")
 	)
 	(label "Pin_36"
 		(at 185.42 102.87 0)

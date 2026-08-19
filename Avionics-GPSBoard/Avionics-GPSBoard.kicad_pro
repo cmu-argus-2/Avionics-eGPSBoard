@@ -517,7 +517,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.195,
         "diff_pair_gap": 0.1524,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.128016,
@@ -912,7 +912,7 @@
         "uuid": "4c932743-8c6f-426e-9c1f-5a3f2b32c70d"
       }
     ],
-    "used_designators": "SW1-4,AE1-2,#PWR1-385,Y1,Ue1,Q1-11,Q23-33,C1-157,L1-13,U1-35,D1-16,D19-23,#SUPPLY9-10,#SUPPLY13-14,#SUPPLY16,#SUPPLY20-26,TP1-12,JP1,R1-105,R117,R136-149,R153-235,J1-11,J14-16,J20-28,H1-10,H29-32,BT2",
+    "used_designators": "L1-13,Q1-11,Q23-33,Ue1,JP1,TP1-12,R1-105,R117,R136-149,R153-235,BT2,H1-10,H29-32,J1-11,J14-16,J20-28,SW1-4,AE1-2,C1-157,D1-17,D19-23,#SUPPLY9-10,#SUPPLY13-14,#SUPPLY16,#SUPPLY20-26,U1-35,Y1,#PWR1-385",
     "variants": []
   },
   "sheets": [

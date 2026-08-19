@@ -1599,29 +1599,6 @@
 		)
 		(uuid "32fe41af-3f3d-4014-b63b-676f3d711727")
 	)
-	(text_box "Determine best diodes, are they really needed?"
-		(exclude_from_sim no)
-		(at 86.36 168.91 0)
-		(size 22.86 8.89)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 2 10 0.2)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "48f3491e-9091-403f-8456-d29c8a3754be")
-	)
 	(text_box "(LED forward voltage) V_{F} = 2.0V (very liberal estimate here, likely to be lower)\n(Pullup resistor) R_{P} = 10k\n(LED resistor) R_{L} = 2.2k\n\nREQUIREMENTS:\n(LED current) 0.3mA < I_{LED} < 0.6mA\n(Enable pin HIGH threshold) VIH_{EN} = 1.03V (max value from datasheet)\n(Power good sink current) I_{P} = 1mA (recommended from datasheet)\n\nEnsuring LED current within margin:\nI_{LEDmax} = (8.4 - Vf) / (Rp + Rl) = 0.52mA\nI_{LEDmin} = (6.0 - Vf) / (Rp + Rl) = 0.32mA\n\nEnsuring PG signal > VIH_EN:\nV_{PGmax} = 8.4 - (I_LEDmax * Rp) = 3.2V\nV_{PGmin} = 6.0 - (I_LEDmin * Rp) = 2.8V\n\nAssume worst case Vf of 0V (not possible but if the above requirements are met here than Vf is irrelavant):\nI_{LEDworst} = (6.0 - 0) / (Rp + Rl) = 0.49mA\nV_{PGworst} = 6.0 - (I_LEDworst * Rp) = 1.082V\n\nEnsuring sink current within margin:\nI_{PG} = 8.4 / Rp = 0.84mA"
 		(exclude_from_sim no)
 		(at 88.9 104.14 0)
@@ -1663,7 +1640,7 @@
 		(uuid "0e762257-388b-41b5-bd5b-214331591b49")
 	)
 	(junction
-		(at 73.66 119.38)
+		(at 72.39 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1939b24d-71f2-49ff-9e5e-3a33c3729b39")
@@ -1693,7 +1670,7 @@
 		(uuid "6ce4e11c-d43e-4cb4-8d80-ab7ffa33d169")
 	)
 	(junction
-		(at 29.21 119.38)
+		(at 30.48 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f18c304-eaba-4327-bfb8-e24a842b4213")
@@ -1705,7 +1682,7 @@
 		(uuid "96eb802d-1edb-4a66-987f-c6646d03e200")
 	)
 	(junction
-		(at 59.055 119.38)
+		(at 58.42 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cbd2dfc8-839b-4128-8bc2-ac714a963e22")
@@ -1828,7 +1805,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.055 132.08) (xy 59.055 128.27)
+			(xy 58.42 132.08) (xy 58.42 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1838,7 +1815,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 123.19) (xy 73.66 119.38)
+			(xy 72.39 123.19) (xy 72.39 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1848,7 +1825,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 115.57) (xy 73.66 119.38)
+			(xy 72.39 115.57) (xy 72.39 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1948,7 +1925,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 132.08) (xy 73.66 128.27)
+			(xy 72.39 132.08) (xy 72.39 128.27)
 		)
 		(stroke
 			(width 0)
@@ -1958,7 +1935,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.165 119.38) (xy 59.055 119.38)
+			(xy 49.53 119.38) (xy 58.42 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1968,7 +1945,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 107.95) (xy 73.66 110.49)
+			(xy 72.39 107.95) (xy 72.39 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2028,7 +2005,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 119.38) (xy 20.32 119.38)
+			(xy 30.48 119.38) (xy 21.59 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2048,7 +2025,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.055 138.43) (xy 59.055 137.16)
+			(xy 58.42 138.43) (xy 58.42 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2078,7 +2055,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 154.94) (xy 73.66 167.64)
+			(xy 72.39 154.94) (xy 72.39 167.64)
 		)
 		(stroke
 			(width 0)
@@ -2088,7 +2065,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 115.57) (xy 29.21 119.38)
+			(xy 30.48 115.57) (xy 30.48 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2128,7 +2105,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 107.95) (xy 29.21 110.49)
+			(xy 30.48 107.95) (xy 30.48 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2188,7 +2165,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.055 107.95) (xy 59.055 110.49)
+			(xy 58.42 107.95) (xy 58.42 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2198,7 +2175,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 119.38) (xy 29.21 123.19)
+			(xy 30.48 119.38) (xy 30.48 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2208,7 +2185,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 138.43) (xy 73.66 137.16)
+			(xy 72.39 138.43) (xy 72.39 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2228,7 +2205,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.055 115.57) (xy 59.055 119.38)
+			(xy 58.42 115.57) (xy 58.42 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2238,7 +2215,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 119.38) (xy 73.66 119.38)
+			(xy 63.5 119.38) (xy 72.39 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2248,7 +2225,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 154.94) (xy 29.21 158.75)
+			(xy 30.48 154.94) (xy 30.48 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2258,7 +2235,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.055 154.94) (xy 59.055 158.75)
+			(xy 58.42 154.94) (xy 58.42 158.75)
 		)
 		(stroke
 			(width 0)
@@ -2278,7 +2255,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 163.83) (xy 29.21 176.53)
+			(xy 30.48 163.83) (xy 30.48 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2428,7 +2405,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 128.27) (xy 29.21 132.08)
+			(xy 30.48 128.27) (xy 30.48 132.08)
 		)
 		(stroke
 			(width 0)
@@ -2448,7 +2425,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.055 163.83) (xy 59.055 176.53)
+			(xy 58.42 163.83) (xy 58.42 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2468,7 +2445,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 172.72) (xy 73.66 176.53)
+			(xy 72.39 172.72) (xy 72.39 176.53)
 		)
 		(stroke
 			(width 0)
@@ -2488,7 +2465,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.055 123.19) (xy 59.055 119.38)
+			(xy 58.42 123.19) (xy 58.42 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2518,7 +2495,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 138.43) (xy 29.21 137.16)
+			(xy 30.48 138.43) (xy 30.48 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2567,7 +2544,7 @@
 		(uuid "7ade3d45-ed6b-4a9e-af7f-2d81dcf0cbbc")
 	)
 	(label "PG_1V8M"
-		(at 50.165 119.38 0)
+		(at 49.53 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2587,7 +2564,7 @@
 		(uuid "a1c539f5-2b23-40a1-8b75-cfb4b4385993")
 	)
 	(label "PG_3V3M"
-		(at 64.77 119.38 0)
+		(at 63.5 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2597,7 +2574,7 @@
 		(uuid "ad47e1d2-c4b3-4720-bdda-b85279d2820d")
 	)
 	(label "PG_1V0F"
-		(at 20.32 119.38 0)
+		(at 21.59 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2744,17 +2721,17 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener_Small")
-		(at 29.21 161.29 270)
+		(at 30.48 161.29 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "06092207-0d0b-46df-b738-ca7da071e93a")
 		(property "Reference" "D4"
-			(at 31.242 160.274 90)
+			(at 32.512 160.274 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2764,8 +2741,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SZMMSZ4685T1G"
-			(at 22.86 164.084 90)
+		(property "Value" ""
+			(at 24.13 164.084 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2776,7 +2753,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2787,7 +2764,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2798,7 +2775,7 @@
 			)
 		)
 		(property "Description" "Zener diode, small symbol"
-			(at 29.21 161.29 0)
+			(at 30.48 161.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2809,7 +2786,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2820,7 +2797,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2831,7 +2808,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2842,7 +2819,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2853,7 +2830,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2864,7 +2841,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2875,7 +2852,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2886,7 +2863,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 29.21 161.29 90)
+			(at 30.48 161.29 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2913,7 +2890,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 73.66 125.73 0)
+		(at 72.39 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2923,7 +2900,7 @@
 		(dnp no)
 		(uuid "0c10c682-6c02-43dd-90a1-8bc8bb112934")
 		(property "Reference" "R84"
-			(at 76.2 124.4599 0)
+			(at 74.93 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2934,7 +2911,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 76.2 126.9999 0)
+			(at 74.93 126.9999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2945,7 +2922,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2956,7 +2933,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2967,7 +2944,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2978,7 +2955,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2989,7 +2966,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3000,7 +2977,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3011,7 +2988,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3022,7 +2999,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3033,7 +3010,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3044,7 +3021,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3055,7 +3032,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 73.66 125.73 0)
+			(at 72.39 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3066,7 +3043,7 @@
 			)
 		)
 		(property "CalcVal" "R_{L}"
-			(at 71.755 122.555 0)
+			(at 70.485 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3092,7 +3069,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 59.055 107.95 0)
+		(at 58.42 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3102,7 +3079,7 @@
 		(dnp no)
 		(uuid "1a0a365c-5eb7-4494-90dd-3e891341e454")
 		(property "Reference" "#PWR0219"
-			(at 59.055 111.76 0)
+			(at 58.42 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3113,7 +3090,7 @@
 			)
 		)
 		(property "Value" "VSYS"
-			(at 59.055 104.14 0)
+			(at 58.42 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3123,7 +3100,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.055 107.95 0)
+			(at 58.42 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3134,7 +3111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.055 107.95 0)
+			(at 58.42 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3145,7 +3122,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 59.055 107.95 0)
+			(at 58.42 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3324,7 +3301,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 73.66 107.95 0)
+		(at 72.39 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3334,7 +3311,7 @@
 		(dnp no)
 		(uuid "24fd6049-6eba-4625-92e1-aabb3dbc14c6")
 		(property "Reference" "#PWR0224"
-			(at 73.66 111.76 0)
+			(at 72.39 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3345,7 +3322,7 @@
 			)
 		)
 		(property "Value" "VSYS"
-			(at 73.66 104.14 0)
+			(at 72.39 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3355,7 +3332,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 107.95 0)
+			(at 72.39 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3366,7 +3343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 107.95 0)
+			(at 72.39 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3377,7 +3354,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 73.66 107.95 0)
+			(at 72.39 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3606,6 +3583,175 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 44.45 170.18 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp yes)
+		(uuid "29219d42-9de9-4906-8711-32a73c16a433")
+		(property "Reference" "D6"
+			(at 46.482 169.164 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 38.1 172.974 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 44.45 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 44.45 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b5a6e431-b7e3-4bd7-a82a-8680b46dfa40")
+		)
+		(pin "1"
+			(uuid "b644cc11-01cd-4afc-85f5-550958ca5661")
+		)
+		(instances
+			(project "Avionics-GPSBoard"
+				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 245.11 124.46 0)
 		(unit 1)
@@ -3786,175 +3932,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener_Small")
-		(at 73.66 170.18 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3956e463-cba8-4b71-a9b7-d2253e9ac18b")
-		(property "Reference" "D10"
-			(at 75.692 169.164 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SZMMSZ4685T1G"
-			(at 66.04 172.974 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode, small symbol"
-			(at 73.66 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 73.66 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "93a03bf1-c1fc-464c-bc63-1c3833e3a1cb")
-		)
-		(pin "1"
-			(uuid "0cba2d7e-babb-487c-b75d-b3fc2ac33a53")
-		)
-		(instances
-			(project "Avionics-GPSBoard"
-				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 92.71 44.45 0)
 		(unit 1)
@@ -4026,6 +4003,175 @@
 			(project "Avionics-GPSBoard"
 				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
 					(reference "#PWR0228")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 72.39 170.18 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp yes)
+		(uuid "4518a2b3-5961-4770-8bb3-6f8a777f5a18")
+		(property "Reference" "D10"
+			(at 74.422 169.164 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 66.04 172.974 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 72.39 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 72.39 170.18 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ca14ec21-30e7-403c-a876-b9adfd44a31c")
+		)
+		(pin "1"
+			(uuid "72dad028-cbdf-4a67-af06-dedf17da138c")
+		)
+		(instances
+			(project "Avionics-GPSBoard"
+				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -4696,6 +4842,175 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener_Small")
+		(at 58.42 161.29 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files no)
+		(dnp yes)
+		(uuid "51d2f8e4-54c4-48e6-a0b9-7ddbfd5794f7")
+		(property "Reference" "D8"
+			(at 60.452 160.274 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ""
+			(at 52.07 164.084 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zener diode, small symbol"
+			(at 58.42 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Part Number" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Arrow Price/Stock" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Height" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Part Number" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "STANDARD" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 58.42 161.29 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "df160ebd-1ce1-4b49-b893-52c31eb59d3d")
+		)
+		(pin "1"
+			(uuid "eecef74e-97df-486b-9732-973a1da30d35")
+		)
+		(instances
+			(project "Avionics-GPSBoard"
+				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+BATT")
 		(at 125.73 40.64 0)
 		(unit 1)
@@ -5288,7 +5603,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 59.055 125.73 0)
+		(at 58.42 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5298,7 +5613,7 @@
 		(dnp no)
 		(uuid "6589f74f-36b3-40e2-b423-93a84f791a6c")
 		(property "Reference" "R82"
-			(at 61.595 124.4599 0)
+			(at 60.96 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5309,7 +5624,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 61.595 126.9999 0)
+			(at 60.96 126.9999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5320,7 +5635,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5331,7 +5646,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5342,7 +5657,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5353,7 +5668,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5364,7 +5679,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5375,7 +5690,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5386,7 +5701,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5397,7 +5712,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5408,7 +5723,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5419,7 +5734,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5430,7 +5745,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 59.055 125.73 0)
+			(at 58.42 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5441,7 +5756,7 @@
 			)
 		)
 		(property "CalcVal" "R_{L}"
-			(at 57.15 122.555 0)
+			(at 56.515 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5467,7 +5782,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small_Filled")
-		(at 73.66 134.62 90)
+		(at 72.39 134.62 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5477,7 +5792,7 @@
 		(dnp no)
 		(uuid "660642b9-832f-4370-a852-c25cf575fcc0")
 		(property "Reference" "D9"
-			(at 75.692 133.858 90)
+			(at 74.422 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5488,7 +5803,7 @@
 			)
 		)
 		(property "Value" "LED_G_0603_LTST-C190KRKT"
-			(at 81.28 111.76 0)
+			(at 80.01 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5501,7 +5816,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5512,7 +5827,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5523,7 +5838,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol, filled shape"
-			(at 73.66 134.62 0)
+			(at 72.39 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5534,7 +5849,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 88.9 111.76 0)
+			(at 87.63 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5547,7 +5862,7 @@
 			)
 		)
 		(property "Color" "Red"
-			(at 75.692 135.89 90)
+			(at 74.422 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5558,7 +5873,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5569,7 +5884,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5580,7 +5895,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5591,7 +5906,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5602,7 +5917,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5613,7 +5928,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5624,7 +5939,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5635,7 +5950,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 73.66 134.62 90)
+			(at 72.39 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5646,7 +5961,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 73.66 134.62 0)
+			(at 72.39 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5828,7 +6143,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small_Filled")
-		(at 59.055 134.62 90)
+		(at 58.42 134.62 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5838,7 +6153,7 @@
 		(dnp no)
 		(uuid "74904326-d2a7-4376-b50b-60aecf9c6cef")
 		(property "Reference" "D7"
-			(at 61.087 133.858 90)
+			(at 60.452 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5849,7 +6164,7 @@
 			)
 		)
 		(property "Value" "LED_G_0603_LTST-C190KRKT"
-			(at 66.675 111.76 0)
+			(at 66.04 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5862,7 +6177,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5873,7 +6188,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5884,7 +6199,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol, filled shape"
-			(at 59.055 134.62 0)
+			(at 58.42 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5895,7 +6210,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 74.295 111.76 0)
+			(at 73.66 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5908,7 +6223,7 @@
 			)
 		)
 		(property "Color" "Red"
-			(at 61.087 135.89 90)
+			(at 60.452 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5919,7 +6234,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5930,7 +6245,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5941,7 +6256,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5952,7 +6267,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5963,7 +6278,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5974,7 +6289,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5985,7 +6300,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5996,7 +6311,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 59.055 134.62 90)
+			(at 58.42 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6007,7 +6322,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 59.055 134.62 0)
+			(at 58.42 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6034,7 +6349,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 176.53 0)
+		(at 30.48 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6044,7 +6359,7 @@
 		(dnp no)
 		(uuid "7dfad0a5-4bad-4ff7-81e5-ad7cc39db8e6")
 		(property "Reference" "#PWR0214"
-			(at 29.21 182.88 0)
+			(at 30.48 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6056,7 +6371,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.115 180.34 0)
+			(at 32.385 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6067,7 +6382,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 176.53 0)
+			(at 30.48 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6078,7 +6393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 176.53 0)
+			(at 30.48 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6089,7 +6404,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 176.53 0)
+			(at 30.48 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6100,7 +6415,7 @@
 			)
 		)
 		(property "Author" "Antmicro"
-			(at 38.1 184.15 0)
+			(at 39.37 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6113,7 +6428,7 @@
 			)
 		)
 		(property "License" "Apache-2.0"
-			(at 38.1 186.69 0)
+			(at 39.37 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6316,175 +6631,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Zener_Small")
-		(at 44.45 170.18 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "81d83599-23d7-4260-87ed-c008185c42d4")
-		(property "Reference" "D6"
-			(at 46.482 169.164 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SZMMSZ4685T1G"
-			(at 38.1 172.974 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode, small symbol"
-			(at 44.45 170.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 44.45 170.18 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8bdfbf5f-f2bd-4296-aa73-77f9b2ea2519")
-		)
-		(pin "1"
-			(uuid "6f2ad302-c13d-4e28-a64c-466cdd9d8134")
-		)
-		(instances
-			(project "Avionics-GPSBoard"
-				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 44.45 154.94 0)
 		(unit 1)
@@ -6556,175 +6702,6 @@
 			(project "Avionics-GPSBoard"
 				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
 					(reference "#PWR0217")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener_Small")
-		(at 59.055 161.29 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "86c3aa18-692c-4796-abbd-4ff3281dabed")
-		(property "Reference" "D8"
-			(at 61.087 160.274 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SZMMSZ4685T1G"
-			(at 51.435 164.084 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Zener diode, small symbol"
-			(at 59.055 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Part Number" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Arrow Price/Stock" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "STANDARD" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" ""
-			(at 59.055 161.29 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "594795d0-3e90-4198-9417-55961ac88ada")
-		)
-		(pin "1"
-			(uuid "dc1a1eaa-5d00-49a1-8216-b1b47b3c4601")
-		)
-		(instances
-			(project "Avionics-GPSBoard"
-				(path "/4c932743-8c6f-426e-9c1f-5a3f2b32c70d/60aa2943-2df4-4541-853f-c25e8e58a8ce"
-					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -6911,7 +6888,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 29.21 125.73 0)
+		(at 30.48 125.73 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6921,7 +6898,7 @@
 		(dnp no)
 		(uuid "9210bd48-cba5-458b-ab57-d31c92be7331")
 		(property "Reference" "R78"
-			(at 31.75 124.4599 0)
+			(at 33.02 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6932,7 +6909,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 31.75 126.9999 0)
+			(at 33.02 126.9999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6943,7 +6920,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6954,7 +6931,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6965,7 +6942,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6976,7 +6953,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6987,7 +6964,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6998,7 +6975,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7009,7 +6986,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7020,7 +6997,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7031,7 +7008,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7042,7 +7019,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7053,7 +7030,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 29.21 125.73 0)
+			(at 30.48 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7064,7 +7041,7 @@
 			)
 		)
 		(property "CalcVal" "R_{L}"
-			(at 27.305 122.555 0)
+			(at 28.575 122.555 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7090,7 +7067,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 29.21 138.43 0)
+		(at 30.48 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7100,7 +7077,7 @@
 		(dnp no)
 		(uuid "9268b247-2b78-4422-8ea8-b5973d2bb5cc")
 		(property "Reference" "#PWR0212"
-			(at 29.21 144.78 0)
+			(at 30.48 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7112,7 +7089,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.115 142.24 0)
+			(at 32.385 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7123,7 +7100,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 138.43 0)
+			(at 30.48 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7134,7 +7111,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 138.43 0)
+			(at 30.48 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7145,7 +7122,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 138.43 0)
+			(at 30.48 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7156,7 +7133,7 @@
 			)
 		)
 		(property "Author" "Antmicro"
-			(at 38.1 146.05 0)
+			(at 39.37 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7169,7 +7146,7 @@
 			)
 		)
 		(property "License" "Apache-2.0"
-			(at 38.1 148.59 0)
+			(at 39.37 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7195,7 +7172,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 29.21 113.03 0)
+		(at 30.48 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7205,7 +7182,7 @@
 		(dnp no)
 		(uuid "98059e88-9e4a-4d9e-8094-b02a00422c7f")
 		(property "Reference" "R77"
-			(at 31.75 111.7599 0)
+			(at 33.02 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7216,7 +7193,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 31.75 114.2999 0)
+			(at 33.02 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7227,7 +7204,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7238,7 +7215,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7249,7 +7226,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7260,7 +7237,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7271,7 +7248,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7282,7 +7259,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7293,7 +7270,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7304,7 +7281,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7315,7 +7292,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7326,7 +7303,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7337,7 +7314,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 29.21 113.03 0)
+			(at 30.48 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7348,7 +7325,7 @@
 			)
 		)
 		(property "CalcVal" "R_{P}"
-			(at 27.305 109.855 0)
+			(at 28.575 109.855 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7631,7 +7608,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.055 138.43 0)
+		(at 58.42 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7641,7 +7618,7 @@
 		(dnp no)
 		(uuid "a422782d-281e-40c9-8680-399957ff92f4")
 		(property "Reference" "#PWR0220"
-			(at 59.055 144.78 0)
+			(at 58.42 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7653,7 +7630,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 142.24 0)
+			(at 60.325 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7664,7 +7641,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.055 138.43 0)
+			(at 58.42 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7675,7 +7652,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.055 138.43 0)
+			(at 58.42 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7686,7 +7663,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.055 138.43 0)
+			(at 58.42 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7697,7 +7674,7 @@
 			)
 		)
 		(property "Author" "Antmicro"
-			(at 67.945 146.05 0)
+			(at 67.31 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7710,7 +7687,7 @@
 			)
 		)
 		(property "License" "Apache-2.0"
-			(at 67.945 148.59 0)
+			(at 67.31 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7736,7 +7713,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 176.53 0)
+		(at 72.39 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7746,7 +7723,7 @@
 		(dnp no)
 		(uuid "a44b45c1-3912-44bc-adaa-a1606c420913")
 		(property "Reference" "#PWR0227"
-			(at 73.66 182.88 0)
+			(at 72.39 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7758,7 +7735,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 75.565 180.34 0)
+			(at 74.295 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7769,7 +7746,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 176.53 0)
+			(at 72.39 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7780,7 +7757,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 176.53 0)
+			(at 72.39 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7791,7 +7768,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 176.53 0)
+			(at 72.39 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7802,7 +7779,7 @@
 			)
 		)
 		(property "Author" "Antmicro"
-			(at 82.55 184.15 0)
+			(at 81.28 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7815,7 +7792,7 @@
 			)
 		)
 		(property "License" "Apache-2.0"
-			(at 82.55 186.69 0)
+			(at 81.28 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8097,7 +8074,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.055 176.53 0)
+		(at 58.42 176.53 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8107,7 +8084,7 @@
 		(dnp no)
 		(uuid "ba56e813-909e-4b71-87ff-990af07b4a7f")
 		(property "Reference" "#PWR0222"
-			(at 59.055 182.88 0)
+			(at 58.42 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8119,7 +8096,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.96 180.34 0)
+			(at 60.325 180.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8130,7 +8107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.055 176.53 0)
+			(at 58.42 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8141,7 +8118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.055 176.53 0)
+			(at 58.42 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8152,7 +8129,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.055 176.53 0)
+			(at 58.42 176.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8163,7 +8140,7 @@
 			)
 		)
 		(property "Author" "Antmicro"
-			(at 67.945 184.15 0)
+			(at 67.31 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8176,7 +8153,7 @@
 			)
 		)
 		(property "License" "Apache-2.0"
-			(at 67.945 186.69 0)
+			(at 67.31 186.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8792,7 +8769,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 29.21 154.94 0)
+		(at 30.48 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8802,7 +8779,7 @@
 		(dnp no)
 		(uuid "c622be96-ef70-4acf-8d8f-18f6fcb4a9f2")
 		(property "Reference" "#PWR0213"
-			(at 29.21 158.75 0)
+			(at 30.48 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8813,7 +8790,7 @@
 			)
 		)
 		(property "Value" "+1V0_F"
-			(at 29.21 150.876 0)
+			(at 30.48 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8823,7 +8800,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 154.94 0)
+			(at 30.48 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8834,7 +8811,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 154.94 0)
+			(at 30.48 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8845,7 +8822,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 29.21 154.94 0)
+			(at 30.48 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8869,7 +8846,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 59.055 113.03 0)
+		(at 58.42 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8879,7 +8856,7 @@
 		(dnp no)
 		(uuid "c83cc810-c9b9-4edf-8f9b-0db49d527065")
 		(property "Reference" "R81"
-			(at 61.595 111.7599 0)
+			(at 60.96 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8890,7 +8867,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 61.595 114.2999 0)
+			(at 60.96 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8901,7 +8878,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8912,7 +8889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8923,7 +8900,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8934,7 +8911,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8945,7 +8922,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8956,7 +8933,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8967,7 +8944,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8978,7 +8955,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8989,7 +8966,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9000,7 +8977,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9011,7 +8988,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 59.055 113.03 0)
+			(at 58.42 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9022,7 +8999,7 @@
 			)
 		)
 		(property "CalcVal" "R_{P}"
-			(at 57.15 109.855 0)
+			(at 56.515 109.855 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9125,7 +9102,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 73.66 138.43 0)
+		(at 72.39 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9135,7 +9112,7 @@
 		(dnp no)
 		(uuid "e0b3c2fa-3af4-4118-ace8-7b403a118426")
 		(property "Reference" "#PWR0225"
-			(at 73.66 144.78 0)
+			(at 72.39 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9147,7 +9124,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 75.565 142.24 0)
+			(at 74.295 142.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9158,7 +9135,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 138.43 0)
+			(at 72.39 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9169,7 +9146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 138.43 0)
+			(at 72.39 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9180,7 +9157,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 73.66 138.43 0)
+			(at 72.39 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9191,7 +9168,7 @@
 			)
 		)
 		(property "Author" "Antmicro"
-			(at 82.55 146.05 0)
+			(at 81.28 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9204,7 +9181,7 @@
 			)
 		)
 		(property "License" "Apache-2.0"
-			(at 82.55 148.59 0)
+			(at 81.28 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9410,7 +9387,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 59.055 154.94 0)
+		(at 58.42 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9420,7 +9397,7 @@
 		(dnp no)
 		(uuid "e3f42ba4-bfbd-4959-bfe4-ea6b3667291b")
 		(property "Reference" "#PWR0221"
-			(at 59.055 158.75 0)
+			(at 58.42 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9431,7 +9408,7 @@
 			)
 		)
 		(property "Value" "+1V8_M"
-			(at 59.055 150.876 0)
+			(at 58.42 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9441,7 +9418,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.055 154.94 0)
+			(at 58.42 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9452,7 +9429,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.055 154.94 0)
+			(at 58.42 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9463,7 +9440,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 59.055 154.94 0)
+			(at 58.42 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9487,7 +9464,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 73.66 113.03 0)
+		(at 72.39 113.03 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9497,7 +9474,7 @@
 		(dnp no)
 		(uuid "e44af39f-7840-4d2c-8863-42f02334e368")
 		(property "Reference" "R83"
-			(at 76.2 111.7599 0)
+			(at 74.93 111.7599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9508,7 +9485,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 76.2 114.2999 0)
+			(at 74.93 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9519,7 +9496,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9530,7 +9507,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9541,7 +9518,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9552,7 +9529,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9563,7 +9540,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9574,7 +9551,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9585,7 +9562,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9596,7 +9573,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9607,7 +9584,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9618,7 +9595,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9629,7 +9606,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 73.66 113.03 0)
+			(at 72.39 113.03 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9640,7 +9617,7 @@
 			)
 		)
 		(property "CalcVal" "R_{P}"
-			(at 71.755 109.855 0)
+			(at 70.485 109.855 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9666,7 +9643,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small_Filled")
-		(at 29.21 134.62 90)
+		(at 30.48 134.62 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9676,7 +9653,7 @@
 		(dnp no)
 		(uuid "ec079c33-a53a-4c0c-aa01-bc28eeb5e57d")
 		(property "Reference" "D3"
-			(at 31.242 133.858 90)
+			(at 32.512 133.858 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9687,7 +9664,7 @@
 			)
 		)
 		(property "Value" "LED_G_0603_LTST-C190KRKT"
-			(at 36.83 111.76 0)
+			(at 38.1 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9700,7 +9677,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9711,7 +9688,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9722,7 +9699,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol, filled shape"
-			(at 29.21 134.62 0)
+			(at 30.48 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9733,7 +9710,7 @@
 			)
 		)
 		(property "MPN" ""
-			(at 44.45 111.76 0)
+			(at 45.72 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9746,7 +9723,7 @@
 			)
 		)
 		(property "Color" "Red"
-			(at 31.242 135.89 90)
+			(at 32.512 135.89 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9757,7 +9734,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9768,7 +9745,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9779,7 +9756,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9790,7 +9767,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9801,7 +9778,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9812,7 +9789,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9823,7 +9800,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9834,7 +9811,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 29.21 134.62 90)
+			(at 30.48 134.62 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9845,7 +9822,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 29.21 134.62 0)
+			(at 30.48 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9872,7 +9849,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 73.66 154.94 0)
+		(at 72.39 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9882,7 +9859,7 @@
 		(dnp no)
 		(uuid "f05967cf-2777-4dbb-af21-446bd3ab17b2")
 		(property "Reference" "#PWR0226"
-			(at 73.66 158.75 0)
+			(at 72.39 158.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9893,7 +9870,7 @@
 			)
 		)
 		(property "Value" "+3V3_M"
-			(at 73.66 150.876 0)
+			(at 72.39 150.876 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9903,7 +9880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 154.94 0)
+			(at 72.39 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9914,7 +9891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 154.94 0)
+			(at 72.39 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9925,7 +9902,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 73.66 154.94 0)
+			(at 72.39 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9949,7 +9926,7 @@
 	)
 	(symbol
 		(lib_id "power:+BATT")
-		(at 29.21 107.95 0)
+		(at 30.48 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9959,7 +9936,7 @@
 		(dnp no)
 		(uuid "f15f4c75-de94-44ac-bfac-2b4770cf8264")
 		(property "Reference" "#PWR0211"
-			(at 29.21 111.76 0)
+			(at 30.48 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9970,7 +9947,7 @@
 			)
 		)
 		(property "Value" "VSYS"
-			(at 29.21 104.14 0)
+			(at 30.48 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9980,7 +9957,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 29.21 107.95 0)
+			(at 30.48 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9991,7 +9968,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 29.21 107.95 0)
+			(at 30.48 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10002,7 +9979,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 29.21 107.95 0)
+			(at 30.48 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

@@ -10140,7 +10140,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132134-11_Vertical"
+		(property "Footprint" "Connector_Coaxial:MMCX_Molex_73415-0961_Horizontal_0.8mm-PCB"
 			(at 55.88 157.48 0)
 			(hide yes)
 			(show_name no)
