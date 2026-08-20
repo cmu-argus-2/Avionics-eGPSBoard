@@ -3355,7 +3355,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 48.26) (xy 242.57 48.26)
+			(xy 227.33 40.64) (xy 242.57 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3495,7 +3495,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 40.64) (xy 279.4 40.64)
+			(xy 262.89 43.18) (xy 279.4 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3565,7 +3565,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 43.18) (xy 242.57 43.18)
+			(xy 227.33 45.72) (xy 242.57 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3865,7 +3865,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 40.64) (xy 242.57 40.64)
+			(xy 227.33 43.18) (xy 242.57 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4035,7 +4035,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 48.26) (xy 279.4 48.26)
+			(xy 262.89 40.64) (xy 279.4 40.64)
 		)
 		(stroke
 			(width 0)
@@ -4225,7 +4225,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 43.18) (xy 279.4 43.18)
+			(xy 262.89 45.72) (xy 279.4 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4395,7 +4395,7 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 45.72) (xy 279.4 45.72)
+			(xy 262.89 48.26) (xy 279.4 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4685,7 +4685,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 45.72) (xy 242.57 45.72)
+			(xy 227.33 48.26) (xy 242.57 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4924,7 +4924,7 @@
 		(uuid "082ece81-ddcb-41fc-9e03-331160401889")
 	)
 	(label "nCS"
-		(at 279.4 45.72 180)
+		(at 279.4 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4954,7 +4954,7 @@
 		(uuid "1720b679-c50d-4cef-85ce-008e7f3a497b")
 	)
 	(label "nIDLE_I"
-		(at 279.4 48.26 180)
+		(at 279.4 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5214,7 +5214,7 @@
 		(uuid "bbb3324a-ee11-4c5e-8d22-1d718f97b9e0")
 	)
 	(label "SCLK"
-		(at 279.4 43.18 180)
+		(at 279.4 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5244,7 +5244,7 @@
 		(uuid "e40255c8-8311-4790-ab3b-3b558cfb4846")
 	)
 	(label "SDATA"
-		(at 279.4 40.64 180)
+		(at 279.4 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5286,7 +5286,7 @@
 	)
 	(hierarchical_label "CFG_DATA"
 		(shape input)
-		(at 227.33 40.64 180)
+		(at 227.33 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5297,7 +5297,7 @@
 	)
 	(hierarchical_label "CFG_nCS"
 		(shape input)
-		(at 227.33 45.72 180)
+		(at 227.33 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5308,7 +5308,7 @@
 	)
 	(hierarchical_label "nIDLE"
 		(shape input)
-		(at 227.33 48.26 180)
+		(at 227.33 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5341,7 +5341,7 @@
 	)
 	(hierarchical_label "CFG_CLK"
 		(shape input)
-		(at 227.33 43.18 180)
+		(at 227.33 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
