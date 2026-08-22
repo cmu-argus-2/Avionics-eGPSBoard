@@ -251,6 +251,144 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "TODO: Verify"
+		(exclude_from_sim no)
+		(at 12.7 135.7517 0)
+		(size 21.59 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 2 10 0.2)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "2cb3c464-d2d1-46c0-961e-bd67aa6dd498")
+	)
+	(text_box "TODO: Verify"
+		(exclude_from_sim no)
+		(at 78.74 199.39 0)
+		(size 21.59 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 2 10 0.2)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "54aabbb5-7bfa-4bcd-952f-47f5edc0c9fc")
+	)
+	(text_box "TODO: Verify"
+		(exclude_from_sim no)
+		(at 12.7 88.9 0)
+		(size 21.59 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 2 10 0.2)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "7824d586-14d1-477d-85ac-d21e51fadd24")
+	)
+	(text_box "TODO: Verify"
+		(exclude_from_sim no)
+		(at 154.94 105.41 0)
+		(size 21.59 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 2 10 0.2)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "b937ad09-6070-42a0-be4b-04f8915b5172")
+	)
+	(text_box "TODO: Verify"
+		(exclude_from_sim no)
+		(at 35.56 232.41 0)
+		(size 21.59 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 2 10 0.2)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "cf59c9fa-0fdd-4b95-af26-1fa890fa41a1")
+	)
+	(text_box "TODO: Verify"
+		(exclude_from_sim no)
+		(at 116.84 231.14 0)
+		(size 21.59 3.9483)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 2 10 0.2)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "fc60ddc2-51c0-411e-bcd8-6e8322103f6f")
+	)
 	(junction
 		(at 41.91 271.78)
 		(diameter 0)
@@ -403,7 +541,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 208.28) (xy 116.84 208.28)
+			(xy 66.04 213.36) (xy 116.84 213.36)
 		)
 		(stroke
 			(width 0)
@@ -553,7 +691,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 203.2) (xy 116.84 203.2)
+			(xy 66.04 207.01) (xy 116.84 207.01)
 		)
 		(stroke
 			(width 0)
@@ -643,7 +781,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 213.36) (xy 116.84 213.36)
+			(xy 66.04 215.9) (xy 116.84 215.9)
 		)
 		(stroke
 			(width 0)
@@ -1518,18 +1656,8 @@
 			)
 		)
 		(pin "RF_nIDLE" output
-			(at 116.84 213.36 180)
+			(at 116.84 215.9 180)
 			(uuid "d14b6a70-8d39-45f9-88e8-4d3fa0e5101e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "RF_REG_SHDN" output
-			(at 116.84 203.2 180)
-			(uuid "f06db976-8a44-4a3c-9e48-245581490d47")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1688,7 +1816,7 @@
 			)
 		)
 		(pin "RF_CFG_BUS_nEN" output
-			(at 116.84 208.28 180)
+			(at 116.84 213.36 180)
 			(uuid "8ecd9f25-0436-43b9-91a8-a6fd412b3859")
 			(effects
 				(font
@@ -1730,6 +1858,16 @@
 		(pin "WDT_OUT" output
 			(at 116.84 128.27 180)
 			(uuid "96f4089a-a8f2-476d-b21b-f4ae9b454a29")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RF_REG_EN" output
+			(at 116.84 207.01 180)
+			(uuid "bc642cfc-f867-4a45-82c4-18524c65fe78")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2404,7 +2542,7 @@
 			)
 		)
 		(pin "CFG_BUS_nEN" input
-			(at 66.04 208.28 0)
+			(at 66.04 213.36 0)
 			(uuid "66417ece-a924-4ac0-902e-2bdfe294dbce")
 			(effects
 				(font
@@ -2444,7 +2582,7 @@
 			)
 		)
 		(pin "nIDLE" input
-			(at 66.04 213.36 0)
+			(at 66.04 215.9 0)
 			(uuid "c945e5c8-55d5-422e-a4c1-220874d97f3b")
 			(effects
 				(font
@@ -2453,9 +2591,9 @@
 				(justify right)
 			)
 		)
-		(pin "REG_nSHDN" input
-			(at 66.04 203.2 0)
-			(uuid "0d069fbd-68a8-4256-b78e-e8e31b726b1b")
+		(pin "REG_EN" input
+			(at 66.04 207.01 0)
+			(uuid "257fa268-c049-4047-8aaf-ccbfc4e92330")
 			(effects
 				(font
 					(size 1.27 1.27)

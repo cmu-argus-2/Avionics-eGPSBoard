@@ -1885,7 +1885,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "I2C Addr = 0x40"
+	(text "I2C Addr = 0x45"
 		(exclude_from_sim no)
 		(at 102.87 160.02 0)
 		(effects
@@ -1953,30 +1953,7 @@
 		)
 		(uuid "eb49f9ff-ec93-485b-8106-2b26963bfe9f")
 	)
-	(text_box "TODO: Verify the math here!"
-		(exclude_from_sim no)
-		(at 209.55 89.2353 0)
-		(size 73.66 3.9483)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 2 10 0.2)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "12294bf6-6fdb-42db-bb65-038feaed2376")
-	)
-	(text_box "Design Requirements:\n1) [System voltage] VBATT = 6.0V - 8.4V\n2) [System overvoltage] VBATT_OV = 9.0V (600mV more than lipo max)\n3) [System max current] ILIM = 2.5A\n4) [Soft start current] I_SS = 0.5A\n4) [Load transient blanking interval] t_iob = 1ms\n\nOvervoltage:\n\nVBATT_OV = 1.2V * (1 + (RA / RB)\nRA = 649K\nRB = 100K\nVBATT_OV = 8.988V\n\nSoft Start:\nI_{SS} = C_bulk * SR\nC_{bulk} ~= 80uF (20uF for 4 DCDCs)\nSR = 6.25V/ms\nC_{S} = 2000 / SR ~= 330pF\n\nSoft Start Power Dissipation:\nPD_{SS} = (I_SS * VBATT) / 2 = 2.1W\n\nCurrent Limit:\nR_{ILM} = 3334 / 2.5A ~= 1.33K\n\nOvercurrent Blanking Interval:\nC_{O} = (t_iob * 1.8uA) / 1.51V ~= 1.2nF\n\n\nFault Logic:\n- Overcurrent response = circuit breaker\n- Fault response = latch-off\n"
+	(text_box "Design Requirements:\n1) [System voltage] VBATT = 6.0V - 8.4V\n2) [System overvoltage] VBATT_OV = 9.0V (600mV more than lipo max)\n3) [System max current] ILIM = 2.75A\n4) [Soft start current] I_SS = 0.50A\n4) [Load transient blanking interval] t_iob = 2ms\n\nOvervoltage:\n\nVBATT_OV = 1.2V * (1 + (RA / RB)\nRA = 330K\nRB = 51K\nVBATT_OV = 8.965V\n\nSoft Start:\nI_{SS} = C_bulk * SR\nC_{bulk} ~= 80uF (20uF for 4 DCDCs)\nSR = 6.25V/ms\nC_{S} = 2000 / SR ~= 330pF\n\nSoft Start Power Dissipation:\nPD_{SS} = (I_SS * VBATT) / 2 = 2.1W\n\nCurrent Limit:\nR_{ILM} = 3334 / 2.75A ~= 1.2k\n\nOvercurrent Blanking Interval:\nC_{O} = (t_iob * 1.8uA) / 1.51V ~= 2.2nF\n\n\nFault Logic:\n- Overcurrent response = circuit breaker\n- Fault response = latch-off\n"
 		(exclude_from_sim no)
 		(at 209.55 94.4536 0)
 		(size 73.66 69.3764)
@@ -1997,29 +1974,6 @@
 			(justify left top)
 		)
 		(uuid "3e099c8c-c428-47b2-9446-ad07f86750ce")
-	)
-	(text_box "TODO: Ensure no collisions w/ other sensors on bus!!"
-		(exclude_from_sim no)
-		(at 101.6 170.5371 0)
-		(size 22.86 8.5329)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-			(color 255 0 0 1)
-		)
-		(fill
-			(type color)
-			(color 255 2 10 0.2)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-			(justify left top)
-		)
-		(uuid "65228d2a-81de-48f7-a8a3-40dd9285e7fe")
 	)
 	(text_box "Power monitor placed on BUS 3V3 supply to allow continuous current monitoring even when system is unpowered."
 		(exclude_from_sim no)
@@ -2389,7 +2343,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 81.28) (xy 172.085 81.28)
+			(xy 167.005 90.17) (xy 152.4 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2429,7 +2383,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 81.28) (xy 157.48 83.82)
+			(xy 167.005 90.17) (xy 167.005 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2679,7 +2633,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 90.17) (xy 157.48 88.9)
+			(xy 167.005 99.06) (xy 167.005 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3188,12 +3142,12 @@
 		(uuid "ffd71982-7526-4d3c-aabd-416a89768033")
 	)
 	(label "SYS_ENABLE"
-		(at 157.48 81.28 0)
+		(at 167.005 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "24730d2a-1d0d-4f04-86a3-6a52dd31e305")
 	)
@@ -3301,12 +3255,12 @@
 	)
 	(hierarchical_label "SYS_ENABLE"
 		(shape input)
-		(at 172.085 81.28 0)
+		(at 152.4 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "b79ecb29-b5b7-485a-9798-e5c2da538444")
 	)
@@ -3394,10 +3348,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "230b2f74-bc6d-4ebc-bb12-a627b3fc2f5e")
 		(property "Reference" "R36"
 			(at 83.82 158.115 0)
@@ -3667,7 +3621,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "649k"
+		(property "Value" "330k"
 			(at 171.45 51.308 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5536,10 +5490,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "814fd8f8-a489-49ac-bfac-bb7e22bc8585")
 		(property "Reference" "R39"
 			(at 96.52 168.275 0)
@@ -5913,7 +5867,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "2k7"
+		(property "Value" "1k2"
 			(at 243.84 66.548 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6258,7 +6212,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "2n2"
 			(at 254.762 66.294 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7013,7 +6967,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 157.48 86.36 180)
+		(at 167.005 95.25 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7023,7 +6978,7 @@
 		(dnp no)
 		(uuid "b6f1a6d5-9efc-411b-bbf1-3a542c644743")
 		(property "Reference" "R40"
-			(at 158.75 84.836 0)
+			(at 165.735 93.726 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7034,7 +6989,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 158.75 86.868 0)
+			(at 165.735 95.758 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7046,7 +7001,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7057,7 +7012,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7068,7 +7023,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7079,7 +7034,7 @@
 			)
 		)
 		(property "MPN" "C237112"
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7090,7 +7045,7 @@
 			)
 		)
 		(property "Arrow Part Number" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7101,7 +7056,7 @@
 			)
 		)
 		(property "Arrow Price/Stock" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7112,7 +7067,7 @@
 			)
 		)
 		(property "Height" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7123,7 +7078,7 @@
 			)
 		)
 		(property "Mouser Part Number" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7134,7 +7089,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7145,7 +7100,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7156,7 +7111,7 @@
 			)
 		)
 		(property "Sim.Device" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7167,7 +7122,7 @@
 			)
 		)
 		(property "Sim.Type" ""
-			(at 157.48 86.36 0)
+			(at 167.005 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7214,7 +7169,7 @@
 				(justify right bottom)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "51k"
 			(at 171.45 61.468 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7580,10 +7535,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c5eaa89d-91e6-461f-ae7e-dac31ee06606")
 		(property "Reference" "R38"
 			(at 96.52 158.115 0)
@@ -8018,10 +7973,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+		(in_pos_files no)
+		(dnp yes)
 		(uuid "d6fc2946-dbf6-47ea-9944-4fd76a245fbe")
 		(property "Reference" "R37"
 			(at 83.82 168.275 0)
@@ -8683,7 +8638,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 157.48 90.17 0)
+		(at 167.005 99.06 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8693,7 +8649,7 @@
 		(dnp no)
 		(uuid "faf73fca-0308-4551-aed4-7bb509157d5b")
 		(property "Reference" "#PWR0102"
-			(at 157.48 96.52 0)
+			(at 167.005 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8704,7 +8660,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 157.48 93.98 0)
+			(at 167.005 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8714,7 +8670,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 90.17 0)
+			(at 167.005 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8725,7 +8681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 90.17 0)
+			(at 167.005 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8736,7 +8692,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 90.17 0)
+			(at 167.005 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

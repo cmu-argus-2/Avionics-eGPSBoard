@@ -1599,7 +1599,30 @@
 		)
 		(uuid "32fe41af-3f3d-4014-b63b-676f3d711727")
 	)
-	(text_box "(LED forward voltage) V_{F} = 2.0V (very liberal estimate here, likely to be lower)\n(Pullup resistor) R_{P} = 10k\n(LED resistor) R_{L} = 2.2k\n\nREQUIREMENTS:\n(LED current) 0.3mA < I_{LED} < 0.6mA\n(Enable pin HIGH threshold) VIH_{EN} = 1.03V (max value from datasheet)\n(Power good sink current) I_{P} = 1mA (recommended from datasheet)\n\nEnsuring LED current within margin:\nI_{LEDmax} = (8.4 - Vf) / (Rp + Rl) = 0.52mA\nI_{LEDmin} = (6.0 - Vf) / (Rp + Rl) = 0.32mA\n\nEnsuring PG signal > VIH_EN:\nV_{PGmax} = 8.4 - (I_LEDmax * Rp) = 3.2V\nV_{PGmin} = 6.0 - (I_LEDmin * Rp) = 2.8V\n\nAssume worst case Vf of 0V (not possible but if the above requirements are met here than Vf is irrelavant):\nI_{LEDworst} = (6.0 - 0) / (Rp + Rl) = 0.49mA\nV_{PGworst} = 6.0 - (I_LEDworst * Rp) = 1.082V\n\nEnsuring sink current within margin:\nI_{PG} = 8.4 / Rp = 0.84mA"
+	(text_box "TODO: Figure out isolation diode addition here!"
+		(exclude_from_sim no)
+		(at 229.87 152.4 0)
+		(size 22.86 10.0822)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 2 10 0.2)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "6a6e70b8-37e8-415c-acd5-882d7063aed3")
+	)
+	(text_box "(LED forward voltage) V_{F} = 2.0V (very liberal estimate here, likely to be lower)\n(Pullup resistor) R_{P} = 10k\n(LED resistor) R_{L} = 2.2k\n\nREQUIREMENTS:\n(LED current) 0.3mA < I_{LED} < 0.6mA\n(Enable pin HIGH threshold) VIH_{EN} = 1.03V (max value from datasheet)\n(Power good sink current) I_{PG} = 1mA (recommended from datasheet)\n\nEnsuring LED current within margin:\nI_{LEDmax} = (8.4 - Vf) / (Rp + Rl) = 0.52mA\nI_{LEDmin} = (6.0 - Vf) / (Rp + Rl) = 0.32mA\n\nEnsuring PG signal > VIH_EN:\nV_{PGmax} = 8.4 - (I_LEDmax * Rp) = 3.2V\nV_{PGmin} = 6.0 - (I_LEDmin * Rp) = 2.8V\n\nAssume worst case Vf of 0V (not possible but if the above requirements are met here than Vf is irrelavant):\nI_{LEDworst} = (6.0 - 0) / (Rp + Rl) = 0.49mA\nV_{PGworst} = 6.0 - (I_LEDworst * Rp) = 1.082V\n\nEnsuring sink current within margin:\nI_{PG} = 8.4 / Rp = 0.84mA"
 		(exclude_from_sim no)
 		(at 88.9 104.14 0)
 		(size 81.915 53.0194)

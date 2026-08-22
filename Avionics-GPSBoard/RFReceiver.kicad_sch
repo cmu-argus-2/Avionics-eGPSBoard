@@ -3069,26 +3069,6 @@
 		)
 		(uuid "eb059b7d-cc22-490e-b514-a589edf1ea6c")
 	)
-	(text_box "Added Pi filter to make any tuning changes if needed. Stuffing inductor with 0R resistor for now"
-		(exclude_from_sim no)
-		(at 29.21 144.78 0)
-		(size 38.1 10.16)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "ee4509ff-ffbb-469e-9d1c-868ea6854152")
-	)
 	(junction
 		(at 27.94 58.42)
 		(diameter 0)
@@ -5023,7 +5003,7 @@
 		)
 		(uuid "52a76025-e4c1-438f-b812-f08444707dae")
 	)
-	(label "REG_nSHDN"
+	(label "REG_EN"
 		(at 237.49 72.39 180)
 		(effects
 			(font
@@ -5133,7 +5113,7 @@
 		)
 		(uuid "9c2c3f4a-ceb8-4c6f-9991-10c1eb06694f")
 	)
-	(label "REG_nSHDN"
+	(label "REG_EN"
 		(at 111.76 38.1 0)
 		(effects
 			(font
@@ -5223,7 +5203,7 @@
 		)
 		(uuid "de95203e-f944-4e85-a32d-cc4a88d5f284")
 	)
-	(label "REG_nSHDN"
+	(label "REG_EN"
 		(at 111.76 62.23 0)
 		(effects
 			(font
@@ -5372,7 +5352,7 @@
 		)
 		(uuid "d61f9447-a07a-4c7c-b789-4332df41082b")
 	)
-	(hierarchical_label "REG_nSHDN"
+	(hierarchical_label "REG_EN"
 		(shape input)
 		(at 203.2 72.39 180)
 		(effects
